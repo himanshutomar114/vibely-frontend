@@ -19,7 +19,7 @@ import toast from "react-hot-toast";
 import ChatLoader from "../components/ChatLoader";
 import CallButton from "../components/CallButton";
 
-const STREAM_API_KEY = import.meta.env.VITE_STEAM_API_KEY;
+const STEAM_API_KEY = import.meta.env.VITE_STEAM_API_KEY;
 
 const ChatPage = () => {
   const { id: targetUserId } = useParams();
@@ -43,7 +43,7 @@ const ChatPage = () => {
       try {
         console.log("Initializing stream chat client...");
 
-        const client = StreamChat.getInstance(STREAM_API_KEY);
+        const client = StreamChat.getInstance(STEAM_API_KEY);
         if (client.user) {
           // Disconnect previous user if already connected
           await client.disconnectUser();
