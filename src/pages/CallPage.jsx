@@ -19,7 +19,7 @@ import "@stream-io/video-react-sdk/dist/css/styles.css";
 import toast from "react-hot-toast";
 import PageLoader from "../components/PageLoader";
 
-const STREAM_API_KEY = import.meta.env.VITE_STEAM_API_KEY;
+const STEAM_API_KEY = import.meta.env.VITE_STEAM_API_KEY;
 
 const CallPage = () => {
   const { id: callId } = useParams();
@@ -49,7 +49,7 @@ const CallPage = () => {
         };
 
         const videoClient = new StreamVideoClient({
-          apiKey: STREAM_API_KEY,
+          apiKey: STEAM_API_KEY,
           user,
           token: tokenData.token,
         });
