@@ -115,8 +115,8 @@ const LoginPage = () => {
       </div>
   
       {/* RIGHT IMAGE SECTION */}
-      <div className="hidden lg:flex w-full lg:w-1/2 bg-gray-600 items-center justify-center">
-        <div className="max-w-md p-8 text-white">
+      <div className="hidden lg:flex w-full lg:w-1/2 bg-primary/10 bg-gray-600 items-center justify-center">
+        <div className="max-w-md p-8">
           <div className="relative aspect-square max-w-sm mx-auto">
             <img src="/signupimage.png" alt="Login illustration" className="w-full h-full rounded-lg" />
           </div>
