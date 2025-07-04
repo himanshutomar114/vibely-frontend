@@ -10,6 +10,7 @@ const useLogout = () => {
     error,
   } = useMutation({
     mutationFn: logout,
+    console.log("Calling logout API...");
     onSuccess: () => queryClient.invalidateQueries({ queryKey: ["authUser"] }),
   });
 
